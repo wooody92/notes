@@ -22,7 +22,7 @@
   Integer.toBinaryString(10진수)
   ```
 
-- Static 으로 선언 되있는 변수 혹은 메소드는 선언 된 큰 틀안에서만 사용 가능하다고 생각 (외부 참조불가)
+- Static 으로 선언 되있는 변수 혹은 메소드는 선언 된 블락에서만 사용 가능하다고 생각 (외부 참조불가)
 
 - Scanner 보다 빠르다.
 
@@ -32,7 +32,3 @@
   int: br.read();
   String: br.readLine();
   ```
-
-- == : Call by reference / .equals() : Call by value
-
-  https://kmj1107.tistory.com/entry/JAVA-문자열string-비교-equals와-의-차이점-equals의-반대
