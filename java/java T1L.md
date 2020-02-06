@@ -15,3 +15,4 @@ for(int i=0; i<10000; i++){
   stringBuilder 혹은 stringBuffer은 mutable하기에 이를 사용하면 객체가 하나만 생성되기에 메모리를 절약할 수 있다.
 ```
 
+- == : Call by reference / .equals() : Call by value
