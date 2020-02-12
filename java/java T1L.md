@@ -1,4 +1,9 @@
 ### Java Today 1 Line (하루 한 줄 배움, Java에 대해 새로 알게된 사실 기록)
+-------
+
+- Object class의 메서드인 toString은 오버라이드해서 유용하게 사용할 수 있다.
+
+- getter, setter를 쓰는 이유? 클래스 멤버변수를 보호하 위해서
 
 - Main 메서드에는 로직을 넣지 않는다. Main 메서드는 각 class들의 관계를 엮어주는 역할만 한다.
 
