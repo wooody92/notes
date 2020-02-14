@@ -24,6 +24,7 @@
 - 임시저장소 삭제 : git stash drop
 - 현재 브랜치 위치를 branch1(예시)로 옮김 : git checkout --force branch1
 - upstream의 해당 브랜치만 추가 : git remote add -t <본인id> upstream
+- git 저장소 특정 브랜치만 불러오기 : git clone -b {branch_name} --single-branch {저장소 URL}
 
 -------
 
