@@ -1,4 +1,4 @@
-### heroku 배포
+### 1.heroku 배포
 
 1. 배포 할 local directory 이동
 
@@ -26,6 +26,7 @@
    git push heroku step1:master
    
    * heroku push는 master branch로 해야한다
+   * git push heroku master
    ```
 
 > 참고 링크
