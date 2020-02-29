@@ -1,4 +1,4 @@
-### `JpaRepository` 와 `CrudRepository` 의 차이점
+### paRepository 와 CrudRepository 의 차이점
 
 1. CrudRepository <- PagingAndSortingRepository <- JpaRepository 인터페이스 상속
 
@@ -17,5 +17,3 @@
    ```
    https://blog.naver.com/writer0713/221587319282
    ```
-
-   
