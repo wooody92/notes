@@ -2,7 +2,7 @@
 
 1. CrudRepository <- PagingAndSortingRepository <- JpaRepository 인터페이스 상속
 
-![image-20200229192146781](/Users/henry_yoon/Library/Application Support/typora-user-images/image-20200229192146781.png)
+<img width="710" alt="스크린샷 2020-02-29 오후 7 24 13" src="https://user-images.githubusercontent.com/58318041/75605786-3dfd0400-5b29-11ea-9a07-88359c10e5f8.png">
 
 2. 기능
 
