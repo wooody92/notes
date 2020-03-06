@@ -32,3 +32,10 @@
 > 참고 링크
 >
 > https://victorydntmd.tistory.com/112
+
+-------
+### 2.heroku 자동으로 ping 보내기(heroku 서버항상 open)
+
+```
+https://kaffeine.herokuapp.com
+```
