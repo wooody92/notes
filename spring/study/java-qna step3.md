@@ -3,7 +3,7 @@ https://github.com/code-squad/java-qna/pull/168
 
 ------
 
-### 구현 기능
+### 0. 구현 기능
 - 세션을 활용 한 아래 기능 구현
   - 로그인
   - 개인정보 수정
@@ -17,10 +17,10 @@ https://github.com/code-squad/java-qna/pull/168
   - JpaRepository와 CrudRepository의 차이
 - 401 unauthorized, 404 not found 에 대한 에러 페이지 추가
 
-### 회고
+### 1. 회고
 어디서부터 어떻게 시작할까 막막할 때, pobi님의 동영상 강의가 방향을 잡아줘서 참 좋은 것 같다. 이번 스텝에서는 에러페이지 html 생성 후 예외처리로 해당 에러 url로 연결시켜 주었는데, 다음 스텝에서는 spring boot framework의 error controller class 학습 후 활용해봐야 겠다.
 
-### 피드백
+### 2. 피드백
    1. 일반적으로 **필드의 getter는 필드 class 그대로 반환하는 것이 컨벤션**이다. 원하는 포맷으로 반환하고자 한다면 새로 메서드를 추가하는 것이 바람직 하다.
 
    2. **유틸성 메서드의 경우 static import**하여 사용하면 코드 가독성을 높일 수 있다. (HttpSessionUtils.isLogin -> isLogin)
