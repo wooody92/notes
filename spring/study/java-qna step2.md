@@ -3,11 +3,11 @@ https://github.com/code-squad/java-qna/pull/149
 
 -----
 
-### Heroku 배포
+### 0. Heroku 배포
 
 - https://wooody92.herokuapp.com/
 
-### 구현 기능
+### 1. 구현 기능
 
 - H2 데이터 베이스 개발환경 설정
 - 기존 구현했던 기능을 데이터 베이스와 연결
@@ -17,7 +17,7 @@ https://github.com/code-squad/java-qna/pull/149
 - [@RequestMapping](https://github.com/RequestMapping) 추가
 - 회원정보 수정 시 @PutMapping 사용
 
-### 궁금한 것
+### 2. 궁금한 것
 
 ```
 @GetMapping("/{id}")
