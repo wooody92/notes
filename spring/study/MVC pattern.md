@@ -4,7 +4,7 @@
 
 <img width="360" alt="스크린샷 2020-03-08 오후 6 33 36" src="https://user-images.githubusercontent.com/58318041/76160207-788b2000-616b-11ea-9795-8f766c2b21b5.png">
 
-<img width="665" alt="스크린샷 2020-03-08 오후 6 31 18" src="https://user-images.githubusercontent.com/58318041/76160216-8f317700-616b-11ea-87af-3a3134a5df0c.png">
+<img width="664" alt="스크린샷 2020-03-08 오후 6 35 12" src="https://user-images.githubusercontent.com/58318041/76160241-be47e880-616b-11ea-886a-73981b95231f.png">
 
 ### Model
 
