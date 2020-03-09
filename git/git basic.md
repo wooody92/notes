@@ -8,7 +8,7 @@
 - git rebase branch1 :  branch1을 base로 지정하여 현재 branch2를 연결
 - 현재작업 임시저장 : git stash
 - 임시저장소 삭제 : git stash drop
-- 현재 브랜치 위치를 branch1(예시)로 옮김 : git checkout --force branch1
+- 현재 Head 위치로 branch를 가져옴 : git branch -f branch(가져올 브랜치)
 - upstream의 해당 브랜치만 추가 : git remote add -t <본인id> upstream
 - git 저장소 특정 브랜치만 불러오기 : git clone -b {branch_name} --single-branch {저장소 URL}
 
