@@ -7,8 +7,9 @@
 
 ### Jackson의 데이터 매핑
 
-- @JsonProperty, getter
-- @JsonIgnore
+- getter : Jackson 라이브러리가 default로 getter 메서드가 있는 entity만 Json 변환한다.
+- @JsonProperty : getter가 없어도 해당 entity Json 변환한다.
+- @JsonIgnore : getter 메서드에 있어도, @JsonIgnore 추가하면 변환하지 않는다.
 - @RestController
   - 반환된 객체를 JSON 타입으로 변환을 하기 위해 사용한다.
 
