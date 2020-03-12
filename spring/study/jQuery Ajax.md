@@ -25,8 +25,21 @@
   // answer-write 클래스의 폼 태그에 맞춰 value값들을 형식에 맞추어 text 형식으로 변환해준다.
   ```
 
+### Event Delegation
+
+- 댓글 추가 후 새로고침 없이 수정 및 삭제 기능들이 바로 동작할 수 있도록 한다.
+
+- ```javascript
+  $(".answer-write input[type='submit']").on("click", addAnswer);
+  $(".qna-comment-slipp-articles").on("click", ".delete-answer-form button[type='submit']", deleteAnswer);
+  ```
+
+- jQuery는 이벤트의 위임을 통해 다수의 요소에 공통으로 적용되는 이벤트 핸들러를 공통된 상위 요소에 단 한번의 연결만으로도 동작할 수 있도록 해준다.
+
+- 각 요소에 연결된 이벤트 핸들러는 화면에 현재 존재하는 요소에는 연결되지만, 새롭게 추가되는 요소에는 연결되지 않는다.
+
 #### 참고 블로그
 
 - http://api.jquery.com/category/ajax/
-
 - https://opentutorials.org/course/1375/6851
+- https://araikuma.tistory.com/627
