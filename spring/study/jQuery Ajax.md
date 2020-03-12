@@ -1,5 +1,7 @@
 ### jQuery Ajax 통신
 
+-  jQuerry란? 서버로부터 데이터(json, ..) 받기위해 클라이언트에서 요청하는 방식
+
 -  jQuery를 이용해서 Ajax 통신을 하는 방법은 아래와 같다.
 
 - jQuery는 Ajax와 관련해서 많은 API를 제공하는데, 그 중 가장 중요한 API가 $.ajax이다.
