@@ -32,5 +32,6 @@
    // default 순서 정렬 기준은 id값으로 보인다.
    ```
 
-3. <img width="784" alt="스크린샷 2020-03-13 오후 6 44 46" src="https://user-images.githubusercontent.com/58318041/76609433-bc5e9a80-655a-11ea-994b-14de00aa1894.png">
+3. 구현 화면
+<img width="784" alt="스크린샷 2020-03-13 오후 6 44 46" src="https://user-images.githubusercontent.com/58318041/76609433-bc5e9a80-655a-11ea-994b-14de00aa1894.png">
 
