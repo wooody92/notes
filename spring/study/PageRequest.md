@@ -21,7 +21,7 @@
            int size = 3;
          	// 한 페이지에 표시할 객체의 수
          
-           PageRequest pageRequest = PageRequest.of(page, size);
+           PageRequest pageRequest = PageRequest.of(page, size, Sort.by("id"));
            return questionRepository.findAll(pageRequest);
        }
    }
@@ -30,6 +30,7 @@
    // 나눈 몫이 총 페이지 수 이다. (나머지가 있다면 +1)
    // 위 코드의 경우 0번 페이지를 반환한다. (questionId 1, 2, 3)
    // default 순서 정렬 기준은 id값으로 보인다.
+   // Sort.by("title") 이면 제목순서로 정렬한다.
    ```
 
 3. 구현 화면
