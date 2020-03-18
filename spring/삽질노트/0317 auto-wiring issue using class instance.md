@@ -42,3 +42,7 @@
 
 <img width="569" alt="스크린샷 2020-03-17 오후 1 55 40" src="https://user-images.githubusercontent.com/58318041/76833289-647fa680-686e-11ea-8365-5047e9b9187c.png">
 
+
+#### 참고 블로그
+- https://cnpnote.tistory.com/entry/SPRING-Autowired와의-바인딩은-new로-시작된-인스턴스-안에서-작업하지-않습니다
+- https://velog.io/@max9106/Spring-Autowired-b4k546knz1
