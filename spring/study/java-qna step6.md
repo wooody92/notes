@@ -24,3 +24,8 @@
 
      https://github.com/wooody92/notes/blob/master/spring/삽질노트/0319%20auto-wired%20before%20class%20constructor.md
 
+### 2. 개선필요
+
+1. Exception Handler
+2. 쿼리 비용 생각하여 최소화하기 (answer count 등)
+3. 질문 삭제할때 페이지 sublist boundary exception 버그 
