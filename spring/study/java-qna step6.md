@@ -1,5 +1,5 @@
 ## STEP6
-
+- https://github.com/code-squad/java-qna/pull/229
 - https://wooody92.herokuapp.com
 
 > 함께한 팀원 : Jack
