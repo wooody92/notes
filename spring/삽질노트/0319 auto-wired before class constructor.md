@@ -37,8 +37,8 @@
 2. 솔루션
 
    - QuestionRepository를 @Autowired 하기전에 PageUtils 생성자를 먼저 수행하게되는데, 그렇기에 questionRepository에는 비어있는 값으로 null이 들어가있다.
-   - 생성자 수행 전에 Autowired를 수행할 수는 없는 노릇이고, 차선책으로 다음 두가지 방법을 생각했다.
-   - 1. builder pattern 사용
+   - 생성자 수행 전에 Autowired를 수행할 수는 없는 노릇이고, 차선책으로 다음 두가지 방법을 생각했고 두번째방식을 사용했다.
+   - 1. builder pattern 사용 ?
      2. 해당 클래스에서 QuestionRepsitory 제거 후, 인스턴스 사용 시 questionRepository를 매개변수로 전달받아 사용 (좋은 방법인지는 모르겠다.)
 
    ```java
