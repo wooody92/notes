@@ -2,7 +2,7 @@
 
 1. 이슈
 
-   - 클라이언트에서 POST 요청한 body의 데이터가 null로 들어왔다.
+   - Spring Data JDBC 환경에서, 클라이언트에서 POST 요청한 body의 데이터가 null로 들어왔다.
    - Request는 정상적으로 요청 확인했다.
 
    ```java
