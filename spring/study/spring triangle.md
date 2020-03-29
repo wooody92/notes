@@ -17,10 +17,9 @@
   Collection<Owner> findByFirstName(@Param("firstName") String firstName);
   ```
 -----
-## Spring Triangle
------
+## * Spring Triangle
 
-## 스프링 IoC
+## 1.스프링 IoC
 
 ### IoC (Inversion of Controll)
 
@@ -78,7 +77,7 @@
 
 -----
 
-## 스프링 AOP
+## 2.스프링 AOP
 
 ### AOP (Aspect Oriented Programming)
 
@@ -96,7 +95,7 @@
 
 -----
 
-## 스프링 PSA
+## 3.스프링 PSA
 
 ### PSA (Portable Service Apstraction)
 
