@@ -19,7 +19,7 @@
 -----
 ## * Spring Triangle
 
-## 1.스프링 IoC
+## ** 스프링 IoC
 
 ### IoC (Inversion of Controll)
 
@@ -77,7 +77,7 @@
 
 -----
 
-## 2.스프링 AOP
+## ** 스프링 AOP
 
 ### AOP (Aspect Oriented Programming)
 
@@ -95,7 +95,7 @@
 
 -----
 
-## 3.스프링 PSA
+## ** 스프링 PSA
 
 ### PSA (Portable Service Apstraction)
 
