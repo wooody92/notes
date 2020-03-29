@@ -29,7 +29,7 @@
 
 ### EC2 Spring Boot Build
 
-1. JDK를 받기 위해 아래 명령어를 통해 업데이트 및 다운받는다.
+1. EC2 서버에 JDK를 받기 위해 아래 명령어를 통해 업데이트 및 다운받는다.
 
    ```
    sudo apt-get update
