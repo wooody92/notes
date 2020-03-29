@@ -23,8 +23,9 @@
    <img width="943" alt="스크린샷 2020-03-29 오후 5 00 05" src="https://user-images.githubusercontent.com/58318041/77844391-6daf3280-71e1-11ea-8ea0-2cc089901771.png">
 
 5. 인스턴스 우분투 접속 완료
+<img width="653" alt="스크린샷 2020-03-29 오후 5 49 46" src="https://user-images.githubusercontent.com/58318041/77844961-d26c8c00-71e5-11ea-8bae-66fc508e9cdc.png">
 
-
+------
 
 ### EC2 Spring Boot Build
 
