@@ -17,7 +17,7 @@
 4. 인스턴스 키가 포함된 디렉토리에서 해당 인스턴스를 ssh를 이용하여 접속한다.
 
    ```
-   ssh -i "henry-keypair.pem" ubuntu@ip
+   ssh -i "henry-keypair.pem" ubuntu@ip(할당받은)
    ```
 
    <img width="943" alt="스크린샷 2020-03-29 오후 5 00 05" src="https://user-images.githubusercontent.com/58318041/77844391-6daf3280-71e1-11ea-8ea0-2cc089901771.png">
