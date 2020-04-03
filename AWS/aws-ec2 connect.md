@@ -64,7 +64,24 @@
 
    <img width="726" alt="스크린샷 2020-03-29 오후 5 22 56" src="https://user-images.githubusercontent.com/58318041/77844445-f4640f80-71e1-11ea-8222-325b1c9ca57a.png">
 
+### Background 배포
+
+- ```
+  ./gradlew build
+  ```
+
+- 빌드가 되고 나면 `{프로젝트}/build/libs` 안에 `.jar` 파일이 생기게 된다.
+
+- nohup 명령어는 터미널이 꺼지더라도 백그라운드로 톰캣이 실행될 수 있도록 해주는 명령어다.
+
+- ```
+  nohup java -jar dust12-0.0.1-SNAPSHOT.jar &
+  ```
+
+- 마지막에 & 꼭 붙이기
+
 #### 참고 링크
 
 - https://opentutorials.org/course/2717/11280
 - 호눅스의 유튜브 비밀링크
+- https://gist.github.com/jypthemiracle/249ca7052659502868faab0dab1819d8
