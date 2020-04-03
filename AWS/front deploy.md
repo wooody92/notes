@@ -16,7 +16,9 @@
 
   npm 제기능 install
 
-### Webpack 풀기 및 Apache 폴더로 옮기기
+### Webpack 묶기 및 Apache 폴더로 옮기기
+
+- 프론트 html 및 js 파일들을 하나의 html, 하나의 js로 엮어주는 작업
 
 - npm install
 
