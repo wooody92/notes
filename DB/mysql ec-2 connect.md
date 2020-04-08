@@ -42,7 +42,7 @@
   spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
   
   # 접속 할 ip:port/database_name 
-  spring.datasource.url=jdbc:mysql://54.180.75.159:3306/todo12
+  spring.datasource.url=jdbc:mysql://54.10.75.19:3306/todo12
   
   # mysql name & password
   spring.datasource.username=henry
