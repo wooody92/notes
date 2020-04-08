@@ -35,6 +35,12 @@
 
 - **위 방법은 인가되지 않은 사용자에게 모두 접근권한을 줄 수 있으므로 좋은 방법이 아니다.**
 
+- mysql 재시작
+
+  ```
+  sudo service mysql restart
+  ```
+
 - 인텔리제이 application.properties 내용 추가
 
   ```
@@ -42,13 +48,13 @@
   spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
   
   # 접속 할 ip:port/database_name 
-  spring.datasource.url=jdbc:mysql://54.10.75.19:3306/todo12
+  spring.datasource.url=jdbc:mysql://54.180.75.159:3306/todo12
   
   # mysql name & password
   spring.datasource.username=henry
   spring.datasource.password=henry
   
-  # 인텔리제이에 내장된 schema.sql을 사용
+  # 인텔리제이에 내장된 chema.sql을 사용
   spring.datasource.initialization-mode=embedded
   spring.datasource.data=classpath:schema.sql
   #spring.datasource.initialization-mode=always
