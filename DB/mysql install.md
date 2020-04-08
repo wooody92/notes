@@ -101,3 +101,6 @@
   Conn.  characterset:	utf8
   --------------
   ```
+
+#### 참고링크
+- https://github.com/Hyune-c/TIL/blob/master/BackEnd/Setup/Mysql.md
