@@ -107,3 +107,6 @@
   ```
 
 - 실 배포 서버에서 서버를 재시작 할때마다 DB를 초기화하는 것은 굉장히 위험한 짓이다. 서버 재시작마다 DB 초기화는 테스트 개발에서만 사용하도록 하자. 
+
+#### 참고 링크
+- http://blog.naver.com/PostView.nhn?blogId=software705&logNo=221337666338&parentCategoryNo=&categoryNo=9&viewDate=&isShowPopularPosts=true&from=search
