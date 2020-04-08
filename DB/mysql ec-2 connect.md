@@ -48,7 +48,7 @@
   spring.datasource.username=henry
   spring.datasource.password=henry
   
-  # 인텔리제이에 내장된 chema.sql을 사용
+  # 인텔리제이에 내장된 schema.sql을 사용
   spring.datasource.initialization-mode=embedded
   spring.datasource.data=classpath:schema.sql
   #spring.datasource.initialization-mode=always
