@@ -47,9 +47,15 @@
   ```
 
 - index.html 저장경로
+- 아래 default 파일에서 root 경로가 어디로 설정되어 있냐에 따라 다르다.
 
   ```
-  /usr/share/nginx/html
+  cd /etc/nginx/sites-available
+  root /var/www/html;
+  
+  ------
+  
+  /var/www/html/
   ```
 
 #### 참고 링크
