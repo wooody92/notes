@@ -80,6 +80,22 @@
 
 - 마지막에 & 꼭 붙이기
 
+### 백그라운드 nohup 종료
+
+- 쉘 스크림트 파일명으로 PID 번호 확인 (java -jar)
+
+  ```
+  ps -ef | grep todo-12-0.0.1-SNAPSHOT.jar
+  ```
+
+-  해당 포트 종료
+
+  ```
+  Kill -9 PID번호
+  ```
+
+  
+
 #### 참고 링크
 
 - https://opentutorials.org/course/2717/11280
