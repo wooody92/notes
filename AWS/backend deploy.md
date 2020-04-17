@@ -22,10 +22,10 @@
    git clone https://github.com/codesquad-member-2020/signup-12.git
    ```
 
-4. 프로젝트 디렉토리로 이동 후 빌드 후 런
+4. 프로젝트 디렉토리로 이동 후 테스트 없이 빌드 후 런
 
    ```
-   ./gradlew build
+   ./gradlew build -x test
    ./gradlew bootRun
    ```
 
@@ -40,7 +40,7 @@
 ### Background 배포
 
 - ```
-  ./gradlew build
+  ./gradlew build -x test
   ```
 
 - 빌드가 되고 나면 `{프로젝트}/build/libs` 안에 `.jar` 파일이 생기게 된다.
