@@ -17,4 +17,7 @@
 
 #### 참고 링크
 
-- [Lucas](
+- [Lucas](https://lucas.codesquad.kr/course/masters-backend-java/Spring-학습/JDBC-template)
+
+
+
