@@ -26,3 +26,14 @@
 - 구글은 사용자에게 authorization code를 부여하고 사용자는 그 코드를 가지고 나의 서비스에 접속한다.
 - 이제 나의 서비스는 사용자로부터 받은 코드와 클라이언트 ID, Secret, URL 을 기반으로 구글에 액세스 토큰을 요청한다.
 -  구글은 정보가 모두 일치하는 지 확인 후 나의 서비스에 액세스 토큰을 부여한다. (authorization code는 이제 필요 없으므로 양쪽 모두 삭제된다.)
+
+
+### Github OAuth
+
+#### 공식문서
+
+- https://developer.github.com/apps/building-oauth-apps/authorizing-oauth-apps/
+
+#### 참고 링크
+
+- https://gist.github.com/blossun/5057cf64f85b809fd76c1c1c750e8cdf
