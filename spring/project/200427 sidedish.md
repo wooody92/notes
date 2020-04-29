@@ -14,16 +14,16 @@
 - [x] 디테일 아이템 출력해보기
 - [x] JDBC Template 이용 DAO 학습 및 구현
 - [x] OAuth 학습 및 구현
-- [ ] OAuth 로그인 후 리다이렉트
+- [x] OAuth 로그인 후 리다이렉트
 - [x] 주문하기 기능
 - [x] 주문 품절 관련 기능
-- [ ] 사진 url 데이터 추가하기
-- [ ] 베스트 아이템 기능
+- [x] 사진 url 데이터 추가하기
+- [x] 베스트 아이템 기능 시간관계 상 포기
 - [x] 색상 추가하기
+- [x] tomcat 설치 &  war 배포
 - [ ] git과 bash, crontab을 이용해서 자동 배포스크립트를 작성
-- [ ] tomcat 사용 배포
 
-
+-----
 
 ### Study Keyword
 
@@ -37,7 +37,7 @@
 - [x] JDBC Template 
 - [ ] JdbcTemplate.query vs. JdbcTemplate queryForObject
 - [x] OAuth
-- [ ] Tomcat
+- [x] Tomcat
 
 
 
@@ -106,7 +106,41 @@
 
 #### 0427 (월)
 
-- 
+- OAuth 로그인 시 메인화면으로 리다이렉션 추가
+
+- OAuth 로그인 및 리다이렉트 방식 고민
+
+  ```
+  방법1) 프론트 : github oauth link 연결 -> 백엔드 : 응답값 받아 서버 메인화면으로 redirect => O
+  방법2) 프론트 : login api로 fetch 요청 -> 백엔드 : 서버 자체에서 github oauth link로 redirect 후 다음 진행사항은 방법1과 동일 -> 처음에는 github 자체에서 CORS 에러 발생(http, https 차이에서 발생하는 에러) 라고 생각함 -> nginx 80 포트로 오는 요청에서만 에러 발생 => X
+  방법3) 백엔드 : NGinx에서 포트 포워딩 => ?
+  ```
+
+- 리다이렉트 시켜주면 데이터는 어디에 넣는걸까?
+
+- 상품 2개 이상 주문 시 처리하는 기능 추가
+
+- Api doc 및 배포일지 업데이트
+
+#### 0428 (화)
+
+- 상품 정량 주문 시 품절 뱃지 안생기는 버그 수정
+- 상품 초과 주문 시 품절 뱃지 생기는 버그 수정
+- 로그인 시 쿠키를 이용하여 사용자 userId 전송
+- 상세페이지 사진 url 데이터 추가
+- 톰캣 설치 및 war 배포
+
+#### 0429 (수)
+
+- 데모
+
+-----
+
+### 아쉬운 점
+
+- CRUD DAO로 구현 (쿼리 수 줄이기)
+- N:M 테이블 구조 설계
+- 자동배포
 
 
 
@@ -114,6 +148,10 @@
 
 - 1주차
 
+<img width="1570" alt="스크린샷 2020-04-29 오후 6 20 35" src="https://user-images.githubusercontent.com/58318041/80580326-549adb00-8a46-11ea-9320-f1216efb1909.png">
+
+
+-----
 
 
 ### 회고 (Apr 25, 2020)
