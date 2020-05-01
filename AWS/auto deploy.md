@@ -1,7 +1,9 @@
 ## 배포 자동화
 
 - war 배포 자동화를 해보자
-
+- touch build.sh 혹은 vi build.sh 로 쉘 스크립트 파일 생성한다.
+- chmod +x build.sh 로 해당 파일에 실행권한을 부여한다.
+- ./build.sh 로 해당 파일을 실행 할 수 있다.
 
 
 ### STEP1 
