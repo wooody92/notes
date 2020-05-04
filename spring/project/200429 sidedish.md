@@ -185,3 +185,77 @@
 - 의문점2 : delivery_type / badge 같이 DB에 배열로 저장할 수 없을까? 방식은?  -> DTO로 한번더 Wrapping
 - 의문점3 : 카테고리 - 카드 구조에서 카드 전체 primary id로 접근하는 것과, 카테고리 id - 카드 카테고리 키로 접근하는 것중 뭐가 더 좋을까? -> JDBC에서는 하나의 aggregation root의 하나의 repository로 사용을 권장하기 때문에 후자이겠지만, 나는 전자로 진행했다. 
 - 의문점4 : 데이터는 제공된 mockAPI에서 파싱해와야 하는 것 인가? 수동으로 가져와야 하는 것인가? -> RestTemplate 으로 파싱해보자
+
+-----
+
+### PR 및 질문
+
+- https://github.com/codesquad-member-2020/sidedish-11/pull/58
+
+### 학습
+
+- 배민찬 API 기능 구현
+- DTO를 사용하여 원하는 JSON 형태로 데이터 가공하기
+- Jdbc Template을 사용하여 DAO 생성
+- OAuth를 사용한 로그인 기능 구현
+
+### 질문
+
+- 처음 DTO 이용하여 데이터를 가공해보았는데, 아래처럼 리스트 타입으로 데이터를 가공해야 할 때 아래처럼 생성자에서 반복문을 사용하였습니다. 굉장히 어색하게 느껴지지만 별다른 좋은 방법이 생각나지 않는데, 어떤 방식으로 처리해야 좋을까요?
+
+```java
+public class ItemResponse {
+    @JsonIgnore
+    private Long id;
+    private String detail_hash;
+
+    @JsonProperty("badge")
+    private List<String> badgeStrings = new ArrayList<>();
+
+    public ItemResponse(Item item) {
+        this.id = item.getId();
+        this.detail_hash = item.getHash();
+
+        for (Badge badge : item.getBadges()) {
+            badgeStrings.add(badge.getName());
+        }
+    }
+```
+
+- DAO는 Entity와 DTO 중 어느 곳에 작성되어야 할까요? 저는 Entity에 관하여 DAO를 작성하였고 그 Entity 객체를 활용하여 DTO를 생성했습니다. DTO 클래스를 만들고 필요한 데이터를 DAO를 이용하여 맵핑시키는 게 맞는 방법일까요?
+
+- 제가 작성한 ItemDao 클래스에서 아래와 같이 하나의 아이템을 조회하는데 관계형 테이블로 연결된 항목들을 조회하기위해 여러번 쿼리를 요청합니다. 좋은 방식이 아니라고 생각이 듭니다. JOIN을 이용하면 쿼리 수를 줄일 수 있을까요? 아니면 어떤 방법이 있을까요?
+
+```java
+private Item getItem(ResultSet rs, Long id) throws SQLException {
+        Item item = new Item();
+        item.setId(rs.getLong("id"));
+        item.setHash(rs.getString("hash"));
+        item.setImage(rs.getString("image"));
+        item.setTitle(rs.getString("title"));
+  
+  			// 여기서 아이템 테이블과 관련된 다른 테이블 조회 요청
+        item.setBadges(getBadges(id));
+        item.setDeliveryTypes(getDeliveryType(id));
+        item.setThumbImages(getThumbImage(id));
+        item.setDetailSections(getDetailSection(id));
+        item.setColors(getColor(id));
+        return item;
+    }
+
+private List<Badge> getBadges(Long itemId) {
+        String sql = "SELECT badge.id AS id, badge.name AS name, badge.item_key AS item_key" +
+                " FROM badge" +
+                " WHERE badge.item = ?" +
+                " ORDER BY item_key";
+
+        RowMapper<Badge> badgeMapper = (rs, rowNum) -> {
+            Badge badge = new Badge(rs.getString("name"));
+            badge.setId(rs.getLong("id"));
+            return badge;
+        };
+        return jdbcTemplate.query(sql, new Object[] {itemId}, badgeMapper);
+    }
+```
+
+
