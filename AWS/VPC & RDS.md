@@ -54,4 +54,5 @@
   sudo mysql -u admin -p --host "endpoint url"
   ```
 
-  
+#### 참고링크
+- https://www.44bits.io/ko/post/understanding_aws_vpc
