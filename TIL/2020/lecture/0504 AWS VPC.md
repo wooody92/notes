@@ -35,4 +35,4 @@
 #### 참고링크
 
 - [https://lucas.codesquad.kr/course/masters-backend-java/AWS-Basic/VPC-%EC%8B%A4%EC%8A%B5](https://lucas.codesquad.kr/course/masters-backend-java/AWS-Basic/VPC-실습)
-
+- https://www.44bits.io/ko/post/understanding_aws_vpc
