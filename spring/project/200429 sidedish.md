@@ -258,4 +258,43 @@ private List<Badge> getBadges(Long itemId) {
     }
 ```
 
+### 리뷰 다시보기
 
+- @Transactional 역할 학습 후 적용하기 (무분별한 사용 방지)
+
+- JdbcTemplate 별도의 @Configuration 클래스로 선언하여 스프링 빈으로 준비하기
+
+  ```
+  JdbcTemplate 은 thread-safe하고, 여러 DAO에서 공통적으로 사용되기때문에,
+  별도의 @Configuration 클래스를 선언해서 스프링 빈으로 준비하는 것이 좋습니다.
+  
+  나중에 프로젝트가 비대해지다보면 phase별로 여러개의 datasource 를 사용해야 할 때도 오는데요,
+  그 때도 JdbcTemplate 이 빈으로 관리되어야 수정하기가 좋습니다.
+  ```
+
+- static 변수가 아닌 것은 upper camel 사용 할 필요가 없다.
+
+  ```
+  ERROR_CODE -> errorCode
+  ```
+
+- 빈 생성자의 중괄호는 한줄로 선언한다.
+
+- 한 줄에 하나의 애노테이션을 선언한다. 또한, 애노테이션 사용시 행 사이의 공백을 유지한다.
+
+- static factory method 학습하기
+
+- 자바 필드명에 언더 스코어 사용하지 않는다. 필요한 Json 응답은 JsonProperty로 해결한다.
+
+- jwt는 헤더가 아닌 바디에 담아 응답한다.
+
+- toString
+
+```
+@Override
+    public String toString() {
+        return new StringJoiner(", ", User.class.getSimpleName() + "[", "]")
+                .add("userId='" + userId + "'")
+                .toString();
+    }
+```
