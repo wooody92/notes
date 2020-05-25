@@ -44,7 +44,7 @@
 
 ### 엔터티 클래스 개발
 
-- Enum Type 사용 시 `@Enumerated(EnumType.STRING)`을 사용하여 Enum 중간에 값이 들어와도 순서가 밀리지 않도록 방지한다. ``@Enumerated(EnumType.ORDINAL)`을 사용하면 순서에 따라 숫자로 맵핑되는데 순서가 중간에 추가되거나 달라지면 장애 문제가 발생한다.
+- Enum Type 사용 시 `@Enumerated(EnumType.STRING)`을 사용하여 Enum 중간에 값이 들어와도 순서가 밀리지 않도록 방지한다. `@Enumerated(EnumType.ORDINAL)`을 사용하면 순서에 따라 숫자로 맵핑되는데 순서가 중간에 추가되거나 달라지면 장애 문제가 발생한다.
 - 실무에서 `getter`는 실용적인 관점에서 많이 사용하여 열어 놓기도 하지만, `setter`의 경우는 열어놓지 않고 필요한 경우 비즈니스 메서드를 만드는 것이 추후 유지보수 측면에서 훨신 좋다.
 - `setter`를 제거하고, 생성자에서 값을 모두 초기화해서 변경 불가능한 클래스로 만들도록 하자. 자바에서 리플렉션 같은 기술이 필요한 비어있는 기본 생성자는 `protected`로 설정하자.
 - 테이블의 아이디는 `@Column(name = "table_id")`로 설정하는 것이 f.k와 일치성도 있고, DB관리 입장에서 편하다.
@@ -91,7 +91,7 @@
 
     ```java
     publlic class Order {
-    	@OneToMany(mappedBy = 
+    @OneToMany(mappedBy = 
     "order", cascade = CascadeType.ALL)
       private List<OrderItem> orderItems = new ArrayList<>();
     }
