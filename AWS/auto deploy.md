@@ -80,6 +80,7 @@ fi
 ### STEP3
 
 - step1과 step2를 합쳐 변경사항이 있는 경우에만 빌드하여 배포한다.
+- war deploy
 
 ```shell
 ############################### directory root ##########################
@@ -137,6 +138,55 @@ else
 fi
 ```
 
+- jar deploy
+
+
+```shell
+############################### directory root ##########################
+#
+# ~/github/issue-tracker-12
+#
+#########################################################################
+
+#!/bin/bash
+echo "hello! checking any updates..."
+
+# move to directory
+cd ~/github/issue-tracker-12
+git fetch
+
+# ` and ' not same, careful
+now=`git rev-parse HEAD`
+origin=`git rev-parse origin/dev`
+
+if [ $now == $origin ]; then
+        echo "nothing changed"
+        echo "now -> ${now}"
+        echo "origin -> ${origin}"
+else
+        echo "changed"
+        echo "now -> ${now}"
+        echo "origin -> ${origin}"
+        echo "build start!!!"
+
+        # jar shutdown
+        kill $(lsof -t -i:8080)
+
+        # git pull
+        cd ~/github/issue-tracker-12
+        git pull
+
+        # build
+        cd ~/github/issue-tracker-12/BE/issue-tracker
+        ./gradlew build -x test
+
+        # jar startup
+        cd ~/github/issue-tracker-12/BE/issue-tracker/build/libs
+        nohup java -jar issue-tracker-0.0.1-SNAPSHOT.jar &
+
+        echo "done"
+fi
+```
 
 
 ### STEP4
