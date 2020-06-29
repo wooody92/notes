@@ -11,7 +11,7 @@
 - [x] `Lazy Loading`과 `proxy 객체`
 - [x] `Entity Manager`
 - [x] `Enum`
-- [ ] `@Enumerated(EnumType.STRING)`
+- [x] `@Enumerated(EnumType.STRING)`
 - [x] `Static Factory Method`
 - [x] `Patch vs Put`
 - [x] `Entity vs. Value Object`
