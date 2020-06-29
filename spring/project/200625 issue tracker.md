@@ -136,12 +136,16 @@
 ## Issues
 
 1. `Child Entity: label`에서 `Parent Entity: issue`와 연관관계 테이블로 `issue`가 갖고있는 `label's f.k`를 제거 할 수 없는 문제
-
    - `label Entity`에서 `issue`에 접근하여 해당 `label`목록 삭제하여 진행
 
    - [참고 링크](https://www.it-swarm.dev/ko/java/jpa-및-해당-조인-테이블-행에서-manytomany-관계가있는-엔티티를-제거하는-방법은-무엇입니까/967305855/)
 
-    
+2. VO? 
+
+- VO에서 p.k 필요한가? CRUD가 가능한가?
+- VO 내부에 선언된 속성(필드)의 모든 값들이 VO 객체마다 값이 같아야, 똑같은 객체라고 판별
+- https://medium.com/webeveloper/entity-vo-dto-666bc72614bb
+
 
 
 
