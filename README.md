@@ -1,14 +1,9 @@
 # TIL
-배운 것을 주제 별로 나누어 누적하여 정리
+이제는 개인 메모장입니다. 배운 것을 주제 별로 블로그에 정리하고 있습니다.
 
-### 링크
+이전에 학습했던 내용을 정리하여 블로그에 나의 글로 다시 작성 중입니다.
 
-#### git practice
-> https://learngitbranching.js.org/
 
-#### google UML drawing tool
-> https://chrome.google.com/webstore/detail/gliffy-diagrams/bhmicilclplefnflapjmnngmkkkkpfad?hl=ko
 
-#### backend roadmap
-> https://github.com/kamranahmedse/developer-roadmap
+`blog` : [https://wooody92.github.io/](https://wooody92.github.io/)
 
